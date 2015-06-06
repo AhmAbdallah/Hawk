@@ -8,6 +8,8 @@ A simple iOS control for picking map locations
 * Copy the contents of the 'Source' folder to your project
 * Import MapKit.framework
 
+### Usage
+
 #### .h
 Import Hawk and set your view controller as the delegate
 ```objective-c
@@ -57,3 +59,5 @@ Optionally, you can set Hawk's title and tint color
     [self presentViewController:hawk animated:TRUE completion:nil];
 }
 ```
+#### Notes
+* Hawk looks best when presented modally. Display issues may arise if inside a navigation controller.
