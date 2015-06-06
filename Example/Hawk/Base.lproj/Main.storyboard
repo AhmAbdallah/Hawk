@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lSD-Do-2qw">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Nup-2e-ZkD">
+            <objects>
+                <viewController id="lSD-Do-2qw" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4UY-EG-7XO"/>
+                        <viewControllerLayoutGuide type="bottom" id="71m-YT-XGZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tC2-EN-f35">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Location Selected" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2QN-dr-PL8">
+                                <rect key="frame" x="58" y="20" width="500" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Fge-bJ-FKZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PX6-Jv-Tjj">
+                                <rect key="frame" x="230" y="251" width="141" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Z2c-6M-1zq"/>
+                                    <constraint firstAttribute="width" constant="141" id="aMc-Ey-n7W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Choose Location">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickLocation" destination="lSD-Do-2qw" eventType="touchUpInside" id="lNB-iq-AXG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PX6-Jv-Tjj" firstAttribute="top" secondItem="tC2-EN-f35" secondAttribute="top" constant="251" id="I5E-gT-kvH"/>
+                            <constraint firstAttribute="trailing" secondItem="2QN-dr-PL8" secondAttribute="trailing" constant="42" id="Mhk-57-Pk6"/>
+                            <constraint firstItem="2QN-dr-PL8" firstAttribute="top" secondItem="4UY-EG-7XO" secondAttribute="bottom" id="Xko-sC-YEo"/>
+                            <constraint firstAttribute="centerX" secondItem="PX6-Jv-Tjj" secondAttribute="centerX" id="hJD-pu-Dij"/>
+                            <constraint firstItem="2QN-dr-PL8" firstAttribute="leading" secondItem="tC2-EN-f35" secondAttribute="leading" constant="58" id="k15-Ad-Q3g"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="locationLabel" destination="2QN-dr-PL8" id="FkE-e7-SSt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ya-FO-pp2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="336" y="421"/>
+        </scene>
+    </scenes>
+</document>
