@@ -23,7 +23,7 @@ Import Hawk and set your view controller as the delegate
 Create a new HawkSearchController and set the delegate
 ```objective-c
 - (IBAction)pickLocation{
-    HawkSearchController *hawk = [[HawkSearchController alloc] initWithNibName:@"HawkSearchController" bundle:nil];
+    HawkSearchController *hawk = [[HawkSearchController alloc] init];
     hawk.delegate = self;
     [self presentViewController:hawk animated:TRUE completion:nil];
 }
@@ -52,7 +52,7 @@ Implement Hawk's delegate methods
 Optionally, you can set Hawk's title and tint color
 ```objective-c
 - (IBAction)pickLocation{
-    HawkSearchController *hawk = [[HawkSearchController alloc] initWithNibName:@"HawkSearchController" bundle:nil];
+    HawkSearchController *hawk = [[HawkSearchController alloc] init];
     hawk.delegate = self;
     hawk.barTitle = @"Pick A Location";
     hawk.tintColor = [UIColor redColor];
