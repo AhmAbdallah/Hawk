@@ -7,6 +7,11 @@ A simple iOS control for picking map locations
 
 * Copy the contents of the 'Source' folder to your project
 * Import MapKit.framework
+* Add the NSLocationWhenInUseUsageDescription plist key
+```
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>Find nearby locations</string>
+```
 
 ### Usage
 
